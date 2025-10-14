@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Poppins;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
 }
 
 body {
-    background-color: #111010;
+    background-color: #121212;
 }
 
 .cabecalho {
@@ -24,7 +25,6 @@ body {
 
 .cabecalho a {
     color: #8727BF;
-    font-family: Poppins;
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
@@ -36,7 +36,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 350px;
-    margin-top: 150px;
+    margin-top: 230px;
 }
 
 .apresentacao_textos{
@@ -46,7 +46,6 @@ body {
 
 .apresentacao_textos h2 {
     color: #FFF;
-    font-family: Poppins;
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -55,7 +54,6 @@ body {
 
 .apresentacao_textos h1 {
     color: #811FBA;
-    font-family: Poppins;
     font-size: 96px;
     font-style: normal;
     font-weight: 500;
@@ -64,7 +62,6 @@ body {
 
 .apresentacao_textos h3 {
     color: #FFF;
-    font-family: Poppins;
     font-size: 36px;
     font-style: italic;
     font-weight: 275;
@@ -83,9 +80,101 @@ body {
     border-radius: 40px;
     background: #811FBA;
     color: black;
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
+
+.nome_efeito {
+    font-size: 96px;
+    background: linear-gradient(45deg, #811FBA, #811FBA, #811FBA, #6A18A8, #57128A, #460B6E, #3C0754, #2E0641);
+    background-size: 400% 100%;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    animation: degrade 3s linear infinite alternate;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.apresentacao img {
+    transition: transform 0.5s ease;
+}
+
+.apresentacao img:hover {
+    transform: scale(1.15);
+}
+
+.sobre_mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    padding: 0 500px;
+}
+
+.sobre_mim h1{
+    color: #811FBA;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sobre_mim p {
+    color: white;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+    gap: 15px;
+}
+
+.habilidades h1 {
+    color: #811FBA;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.habilidades_icones img {
+    background-color: #1E1B22; 
+    border-radius: 8px; 
+    padding: 20px;
+    width: 150px;
+    height: 150px; 
+    border: 1px solid #811FBA; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidades_icones img:hover {
+    transform: scale(1.1);
+}
+
+.habilidades_icones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
