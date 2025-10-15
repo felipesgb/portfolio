@@ -78,12 +78,17 @@ body {
 .apresentacao_botoes a{
     padding: 15px;
     border-radius: 40px;
-    background: #811FBA;
-    color: black;
+    color: #811FBA;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    border: 1px solid #811FBA; 
+}
+
+.apresentacao_botoes a:hover {
+    background-color:#811FBA;
+    color: white;
 }
 
 .nome_efeito {
@@ -177,4 +182,110 @@ body {
     text-align: center;
     gap: 25px;
 }
+
+.projetos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+    gap: 15px;
+    margin-bottom: 300px;
+}
+
+.projetos h1{
+    color: #811FBA;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cards_projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    background-color: #1E1B22; 
+    border-radius: 10px;
+    border: 1px solid #811FBA;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.card h1 {
+    color: white;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.card p{
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+.card a{
+    padding: 7px;
+    border-radius: 10px;
+    color: #811FBA;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 1px solid #811FBA;
+}
+
+.card a:hover{
+    background-color:#811FBA;
+    color: white;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contato h1{
+    color: #811FBA;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.contato_icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+
+.contato_icones img {
+    width: 80px;
+    height: 80px;
+}
+
+
 
