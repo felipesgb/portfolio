@@ -11,10 +11,9 @@
 <body>
     <header>
         <nav class="cabecalho">
-            <a href="#">Início</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#sobre_mim">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
     
@@ -28,14 +27,14 @@
                 <h3>Desenvolvedor de software<strong>   &lt;/&gt;</strong></h3>
                 <div class="apresentacao_botoes">
                     <a href="">Baixe meu CV!</a>
-                    <a href="">Contate-me!</a>
+                    <a href="#contato">Contate-me!</a>
                 </div>
             </div>
             <img src="./assets/imagens/foto.svg" alt="Felipe Gomes">
         </section>
 
 
-        <section class="sobre_mim">
+        <section class="sobre_mim" id="sobre_mim">
             <h1>Sobre mim</h1>
             <p>Tenho 18 anos, sou de São José dos Campos e estudo Desenvolvimento de Software Multiplataforma na FATEC-SJC. Apaixonado por tecnologia, estou sempre em busca de aprender e evoluir na área de desenvolvimento de software.</p>
         </section>
@@ -54,44 +53,45 @@
         </section>
 
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h1>Projetos</h1>
             <div class="cards_projetos">
                 <div class="card">
                     <img src="./assets/imagens/codewave.jpeg" alt="">
                     <h1>Censo SJC</h1>
                     <p>Plataforma para análise gráfica dos dados do ultimo censo de São José dos Campos.</p>
-                    <a href="">GitHub</a>
-                    <a href="">Site</a>
+                    <a href="https://github.com/guilhermefpo/CodeWave">GitHub</a>
+                    <a href="https://codewavecenso.vercel.app/">Site</a>
                 </div>
                 <div class="card">
                     <img src="./assets/imagens/universidade.jpeg" alt="">
                     <h1>Site universidade</h1>
                     <p>Projeto acadêmico de criação de um site para uma universidade utilizando HTML e CSS</p>
-                    <a href="">GitHub</a>
-                    <a href="">Site</a>
+                    <a href="https://github.com/felipesgb/desafio1-designDigital">GitHub</a>
+                    <a href="https://desafio1-design-digital.vercel.app/">Site</a>
                 </div>
             </div>
         </section>
 
-
-        <section class="contato">
-            <h1>Contato</h1>
-            <div class="contato_icones">
-                <a href="https://wa.me/5512996381684">
-                <img src="./assets/imagens/whatsapp_icon.svg" alt="Ícone do Whatsapp">
-                </a>
-                <a href="mailto:felipesgb2310@gmail.com">
-                <img src="./assets/imagens/envelope.png" alt="Ícone do gmail">
-                </a>
-                <a href="https://www.linkedin.com/in/felipesgb/">
-                <img src="./assets/imagens/linkedin.png" alt="Ícone do linkedin">
-                </a>
-                <a href="https://github.com/felipesgb">
-                <img src="./assets/imagens/github.png" alt="Ícone do github">
-                </a>
-            </div>
-        </section>
+        <footer id="contato">
+            <section class="contato">
+                <h1>Contato</h1>
+                <div class="contato_icones">
+                    <a href="https://wa.me/5512996381684">
+                    <img src="./assets/imagens/whatsapp_icon.svg" alt="Ícone do Whatsapp">
+                    </a>
+                    <a href="mailto:felipesgb2310@gmail.com">
+                    <img src="./assets/imagens/envelope.png" alt="Ícone do gmail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/felipesgb/">
+                    <img src="./assets/imagens/linkedin.png" alt="Ícone do linkedin">
+                    </a>
+                    <a href="https://github.com/felipesgb">
+                    <img src="./assets/imagens/github.png" alt="Ícone do github">
+                    </a>
+                </div>
+            </section>
+        </footer>
     </main>
 </body>
 </html>

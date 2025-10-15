@@ -7,6 +7,11 @@
   font-family: Poppins;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
 a {
     text-decoration: none;
 }
@@ -285,6 +290,10 @@ body {
 .contato_icones img {
     width: 80px;
     height: 80px;
+}
+
+.contato_icones img:hover {
+    transform: scale(1.1);
 }
 
 
