@@ -17,19 +17,27 @@ a {
 }
 
 body {
-    background-color: #121212;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    background-image:
+        radial-gradient(circle at 0% 50%, rgba(129, 31, 186, 0.15), transparent 60%),
+        radial-gradient(circle at 100% 50%, rgba(129, 31, 186, 0.15), transparent 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .cabecalho {
     display: flex;
-    padding: 40px 456px;
+    padding: 40px;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
 .cabecalho a {
-    color: #8727BF;
+    color: #811FBA;
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
@@ -40,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 350px;
+    gap: 15%;
     margin-top: 230px;
 }
 
@@ -132,7 +140,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 300px;
-    padding: 0 500px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .sobre_mim h1{
@@ -285,16 +294,42 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 70px;
+    margin-bottom: 100px;
 }
 
 .contato_icones img {
     width: 80px;
     height: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contato_icones img:hover {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1550px){
+    .cabecalho {
+        flex-direction: column;
+        gap: 0px;
+    }
 
+    .apresentacao{
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 50px;
+    }
 
+    .apresentacao img{
+        height: 90%;
+        width: 90%;
+    }
+
+    .contato_icones {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .habilidades {
+        flex-direction: column;
+    }
+}
