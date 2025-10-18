@@ -320,8 +320,7 @@ body {
     }
 
     .apresentacao img{
-        height: 90%;
-        width: 90%;
+        width: auto;
     }
 
     .contato_icones {
