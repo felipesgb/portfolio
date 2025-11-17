@@ -144,7 +144,7 @@ body {
     margin-right: 25%;
 }
 
-.sobre_mim h1{
+.sobre_mim a{
     color: #811FBA;
     font-size: 48px;
     font-style: normal;
@@ -189,9 +189,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #1E1B22; 
-    border-radius: 8px; 
-    padding: 20px; 
-    border: 1px solid #811FBA; 
+    border-radius: 8px;
+    padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     gap: 20px;
     width: 190px;
@@ -211,6 +210,7 @@ body {
 
 .habilidades_cards:hover {
     transform: scale(1.1);
+    border: 1px solid #811FBA;
 }
 
 .projetos {
@@ -240,17 +240,17 @@ body {
 }
 
 .card {
-    height: 350px;
-    width: 300px;
+    height: 500px;
+    width: 450px;
     background-color: #1E1B22; 
     border-radius: 10px;
-    border: 1px solid #811FBA;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    border: 1px solid #811FBA;
 }
 
 .card img{
@@ -261,23 +261,33 @@ body {
 
 .card h1 {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
 }
 
-.card p{
+.p1_card{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.p2_card{
     color: white;
     font-size: 15px;
     margin-top: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    padding: 0 20px;
 }
+
 
 .card a{
     padding: 7px;
     border-radius: 10px;
     color: #811FBA;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -347,4 +357,116 @@ body {
     .habilidades {
         flex-direction: column;
     }
+}
+
+.pag_sobre_mim h1{
+    color: #811FBA;
+    font-size: 40px;
+    padding: 20px 0 0px 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.pag_sobre_mim p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 1000px 0 20px;
+    margin-bottom: 20px;
+}
+
+.pag_sobre_mim ul{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 1000px 0 50px;
+    margin-bottom: 50px;
+}
+
+
+.certificado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 300px;
+}
+
+.certificado h1{
+    color: #811FBA;
+    font-size: 40px;
+    padding: 0 0 0px 20px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cards_certificado{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card_certificado{
+    height: 490px;
+    width: 350px;
+    background-color: #1E1B22; 
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_certificado:hover{
+    transform: scale(1.05);
+    border: 1px solid #811FBA;
+}
+
+.card_certificado img{
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.card_certificado h1{
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.p1_card_certificado{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.p2_card_certificado{
+    color: white;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.card_certificado a{
+    padding: 7px;
+    border-radius: 10px;
+    color: #811FBA;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 1px solid #811FBA;
+}
+
+.card_certificado a:hover{
+    background-color:#811FBA;
+    color: white;
 }
